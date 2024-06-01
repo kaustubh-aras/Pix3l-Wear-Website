@@ -8,13 +8,13 @@ export const Navbar = () => {
   return (
     <nav
       className="Navbar bg-black flex justify-between font"
-      style={{ fontFamily: "YourCustomFont" }}
+      style={{ fontFamily: "Klapt-Regular" }}
     >
       <div className="Logo bg-black w-44">
         <Image src={logo} alt="Pix3l Wear Logo" />
       </div>
       <div className="flex items-center pr-8">
-        <ul className="flex text-white space-x-6 text-2xl">
+        <ul className="flex text-white space-x-6 text-2xl cursor-move">
           <li>
             <Link href="/">Home</Link>
           </li>

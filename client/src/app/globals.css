@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "YourCustomFont";
-  src: url("../../public/fonts/Klapt/Klapt-Bold.ttf") format("truetype");
+  font-family: "Klapt-Regular";
+  src: url("../../public/fonts/Klapt/Klapt-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Klapt-Medium";
+  src: url("../../public/fonts/Klapt/Klapt-Medium.ttf") format("truetype");
 }
