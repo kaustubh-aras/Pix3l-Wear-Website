@@ -4,7 +4,6 @@ import { Navbar } from "@/components/navbar/Navbar";
 import localFont from "next/font/local";
 import { Footer } from "@/components/footer/Footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,16 +13,16 @@ export const metadata = {
 
 const myFont = localFont({
   src: "../../public/fonts/Klapt/Klapt-Bold.ttf",
-  display: 'swap',
+  display: "swap",
 });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={myFont.className}>
-      <body  className="flex flex-col min-h-screen">
+    <html lang="en">
+      <body className="bg-black">
         <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer/>
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
