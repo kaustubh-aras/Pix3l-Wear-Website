@@ -10,3 +10,8 @@
   font-family: "Klapt-Medium";
   src: url("../../public/fonts/Klapt/Klapt-Medium.ttf") format("truetype");
 }
+
+.active {
+  font-weight: normal;
+  border-bottom: 2px solid white;
+}
