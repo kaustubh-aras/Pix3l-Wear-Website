@@ -16,10 +16,12 @@ export const Navbar = () => {
       style={{ fontFamily: "Klapt-Regular" }}
     >
       <div className="Logo bg-black w-44">
-        <Image src={logo} alt="Pix3l Wear Logo" />
+        <Link href="/">
+          <Image src={logo} alt="Pix3l Wear Logo" />
+        </Link>
       </div>
       <div className="flex items-center pr-8">
-        <ul className="flex text-white space-x-6 text-2xl cursor-move">
+        <ul className="flex text-white space-x-6 text-2xl cursor-pointer">
           <li>
             <Link
               href="/"
