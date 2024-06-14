@@ -16,7 +16,7 @@ function Register() {
     >
       <div className="flex flex-col">
         <div className="flex items-center justify-center pb-3">
-          <Image src="/Pix3l_Wear_2.png" width={150} height={100} />
+          <Image src="/Pix3l_Wear_2.png" alt="Pix3l Wear Logo" width={150} height={100} />
         </div>
         <label className="text-xl ml-4 font-bold">Sign In</label>
         <div className="flex flex-col">
@@ -39,7 +39,7 @@ function Register() {
             <h1 className="text-xl font-bold">Click ME</h1>
           </button>
           <div className="flex item-center justify-center gap-3">
-            <span className="text-slate-300">Don't have an account?</span>
+            <span className="text-slate-300">Don&#39;t have an account?</span>
             <span>
               <Link href="/">Click here to create one</Link>
             </span>
