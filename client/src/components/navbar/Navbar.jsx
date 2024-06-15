@@ -64,8 +64,8 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/register"
-              className={`link ${pathName === "/register" ? "active" : ""}`}
+              href="/login"
+              className={`link ${pathName === "/login" ? "active" : ""}`}
             >
               SIGN IN
             </Link>
