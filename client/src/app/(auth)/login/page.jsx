@@ -1,6 +1,6 @@
 "use client";
 
-import Input from "@/components/input/Input";
+import Input from "../../../components/input/Input.jsx"
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";

@@ -1,5 +1,5 @@
 "use client";
-import { ProductCard } from "@/components/ProductCard";
+import { ProductCard } from "../../ProductCard.jsx";
 import React from "react";
 
 export const BestSellerSection = () => {

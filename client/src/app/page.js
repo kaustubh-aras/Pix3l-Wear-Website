@@ -1,7 +1,7 @@
-import Hero from "@/components/hero/Hero";
-import { AnimeSection } from "@/components/sections/anime/AnimeSection";
-import { BestSellerSection } from "@/components/sections/bestseller/BestSellerSection";
-import { GamingSection } from "@/components/sections/gaming/GamingSection";
+import Hero from "../components/hero/Hero.jsx";
+import { AnimeSection } from "../components/sections/anime/AnimeSection.jsx";
+import { BestSellerSection } from "../components/sections/bestseller/BestSellerSection.jsx";
+import { GamingSection } from "../components/sections/gaming/GamingSection.jsx";
 
 export default function Home() {
   return(
