@@ -1,8 +1,10 @@
 "use client";
 import { ProductCard } from "../../ProductCard.jsx";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export const BestSellerSection = () => {
+  const router = useRouter();
   const products = [
     {
       id: 1,
@@ -41,8 +43,15 @@ export const BestSellerSection = () => {
     },
   ];
 
+  const handleProductClick = () => {
+    router.push(`/shop`);
+  };
+
   return (
-    <div className="best-seller-section" style={{ fontFamily: "Klapt-Regular" }}>
+    <div
+      className="best-seller-section"
+      style={{ fontFamily: "Klapt-Regular" }}
+    >
       <div className="flex items-center justify-center my-8">
         <hr className="flex-grow border-gray-300" />
         <span className="text-4xl mx-4 text-white">BEST SELLER</span>
@@ -54,7 +63,11 @@ export const BestSellerSection = () => {
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 m-10">
           {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              onClick={() => handleProductClick(product.id)}
+            />
           ))}
         </div>
       </div>
